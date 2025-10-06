@@ -132,7 +132,7 @@ stages:
             inputs:
               azureSubscription: 'ado-use-case-arm-connection'
               deployToSlotOrASE: 'true'
-              resourceGroupName: 'ado-use-case-arm-connection'
+              resourceGroupName: 'ado-use-case-resource-group'
               slotName: 'swap'
               appName: '$(var-prod-app)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
